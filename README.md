@@ -56,23 +56,33 @@ Verificando se a senha foi exposta...
 Hash gerado com BCrypt: $2a$10$76y0GiRq4ovx38rov...
 Senha armazenada com sucesso para o serviço: facebook
 
-🔍 Verificando Senha com Hash
+---
+
+##  🔍 Verificando Senha com Hash
 Para verificar se uma senha bate com o hash armazenado:
 if (BCrypt.checkpw(senhaInserida, hashArmazenado)) {
     System.out.println("✅ Senha válida!");
 } else {
     System.out.println("❌ Senha incorreta.");
 }
-📁 Arquivo de Saída (senhas.txt)
+
+## 📁 Arquivo de Saída (senhas.txt)
 servico;senhaCriptografadaAES;base64;hashBCrypt
 Exemplo:
 facebook;FgiHskl2s...==$; $2a$10$76y0GiRq4ovx38rov...
-🛡️ Observações
+---
+
+##🛡️ Observações
 O código 2FA usado aqui é apenas simulado para fins de teste.
 A chave AES está fixa no código apenas como exemplo. Para uso real, use uma chave gerada dinamicamente e protegida.
 Não é possível "descriptografar" o hash do BCrypt. Para comparar, use BCrypt.checkpw().
-📚 Créditos
+---
+
+##📚 Créditos
+
 bcrypt — Biblioteca para hashing seguro de senhas.
 Have I Been Pwned API — Utilizada para verificar se senhas já foram expostas.
-📜 Licença
+---
+
+##📜 Licença
 Este projeto é de uso educacional. Sinta-se livre para usar, estudar e modificar.
