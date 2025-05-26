@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module GerenciadorDeSenhas {
+	requires jbcrypt;
+}
