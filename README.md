@@ -15,7 +15,7 @@ Este é um projeto simples de **Gerenciador de Senhas** escrito em Java. Ele per
 
 ## 📂 Estrutura do Projeto
 
-`GerenciadorDeSenhas/
+GerenciadorDeSenhas/
 ├── src/
 │ ├── GerenciadorDeSenhas/
 │ │ └── GerenciadorDeSenhas.java
@@ -26,7 +26,7 @@ Este é um projeto simples de **Gerenciador de Senhas** escrito em Java. Ele per
 ├── module-info.java
 ├── Referenced Libraries/
 │ └── jbcrypt-0.4.jar
-└── senhas.txt`
+└── senhas.txt
 
 ## ⚙️ Requisitos
 
@@ -46,7 +46,6 @@ Este é um projeto simples de **Gerenciador de Senhas** escrito em Java. Ele per
 
 ## 🔑 Exemplo de Funcionamento
 
-`
 Digite o código 2FA (123456 para teste): 123456
 Digite o nome do serviço: facebook
 Deseja gerar uma senha segura automaticamente? (s/n): s
@@ -60,17 +59,17 @@ Senha armazenada com sucesso para o serviço: facebook`
 
 ##  🔍 Verificando Senha com Hash
 Para verificar se uma senha bate com o hash armazenado:
-`if (BCrypt.checkpw(senhaInserida, hashArmazenado)) {
+if (BCrypt.checkpw(senhaInserida, hashArmazenado)) {
     System.out.println("✅ Senha válida!");
 } else {
     System.out.println("❌ Senha incorreta.");
-}`
+}
 
 ## 📁 Arquivo de Saída (senhas.txt)
-`servico;senhaCriptografadaAES;base64;hashBCrypt
+servico;senhaCriptografadaAES;base64;hashBCrypt
 Exemplo:
 facebook;FgiHskl2s...==$; $2a$10$76y0GiRq4ovx38rov...
----`
+---
 
 ##🛡️ Observações
 O código 2FA usado aqui é apenas simulado para fins de teste.
