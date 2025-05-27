@@ -31,7 +31,7 @@ GerenciadorDeSenhas/
 ## ⚙️ Requisitos
 
 - Java 17 ou superior (**Java 21 recomendado**)
-- Biblioteca `jbcrypt-0.4.jar` (já incluída no projeto)
+- Biblioteca `jbcrypt-0.4.jar`
 
 ---
 
